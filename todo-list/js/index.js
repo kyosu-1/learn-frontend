@@ -67,6 +67,10 @@ const createListView = () => {
         todoId.textContent = todo.id;
         todoTitle.textContent = todo.title;
         deleteBtn.textContent = "削除";
+        deleteBtn.addEventListener("click", () => {
+            deleteTodo(todo.id);
+            todoLists.removeChild(todoItem);
+        });
         deleteBtn.classList.add("btn", "btn-secondary");
         todoDelete.appendChild(deleteBtn);
 
