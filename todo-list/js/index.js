@@ -31,7 +31,7 @@ const deleteTodo = (id) => {
 //　input todo and add todo and render todos
 addBtn.addEventListener("click", () => {
     if (inputTodo.value === "") {
-        alert("タスクを入植してください");
+        alert("タスクを入力してください");
         return;
     }
 
