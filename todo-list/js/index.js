@@ -18,7 +18,7 @@ class Todo {
 }
 
 // add todo to todos
-const addTodo = () => {
+const addTodo = (title) => {
     todos.push(new Todo(title));
     currentNum++;
 }
